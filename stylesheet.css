@@ -1,0 +1,120 @@
+/* styling multiple elements. Normally your browser will set a default style to your website, so this method of styling multiple elements is normally used to get rid of the default styling*/
+body, ul, li, h1, h2, a{
+    margin: 0;
+    padding: 0;
+    font-family: arial;
+}
+
+header{
+    background-color: #f63232;
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+    position: fixed;
+    width: 100%;
+    
+    /* the "z-index" brings an object which is hidden behind to show on top. By default the "z-index" is set to 0, so to bring an element on top or in front, you need to set the z-index to 1*/
+    z-index: 1;
+    top: 0;
+    right: 100;
+    left: 0;
+}
+
+header h1{
+    color: white;
+    border: 8px solid white;
+    /* whenever you do 2 values for a padding, the first value is for the top and bottom and the second value is for left and right. Hence, 6px is for top and bottom of 6px, and 12px is for left and right of 12.*/
+    padding: 6px 12px;
+
+    /* the "display inline-block" changes the inline element to inline block. This makes whatever style you apply to it to fit*/
+    display: inline-block; 
+
+    /* "border-radius" gives a curve to the edges of the border.*/
+    border-radius: 50px;
+
+}
+
+.banner{
+    position: relative;
+    left: 0%;
+    right: 0%;
+
+}
+
+.banner img{
+    max-width:100%;
+    width: 100%;
+    bottom: 50px;
+}
+
+.banner .welcome{
+    position: absolute;
+    left: 0%;
+    top: 30%;
+    background-color: #feb614;
+    color: #ffffff;
+    padding: 30px;
+}
+
+.banner h2{
+    font-size: 74px;
+}
+
+/* "em" is a unit of measurement used for scaling a child element by the coefficient of "em", and this is relative to the parent element*/
+.banner h2 span{
+    font-size: 1.3em;
+}
+
+nav{
+    background-color: #f4f4f4;
+    padding: 20px;
+    
+    /* "the sticky" position is a combination of static and fixed*/
+    position: sticky;
+    
+    /* "top: 150px here means nav items will be static but when I scroll to 150px from the screen, the nav elements should be fixed to the screen"*/
+    top: 106px;
+
+}
+
+
+nav ul{
+    /* "nowrap" means the lsit will not move to the next line. In the other words, the list will stay on the same line*/
+    white-space: nowrap;
+
+    max-width: 100%;
+    width: 1200px;
+    text-align: center;
+
+    /* "auto" means if there is any space left or right it distributes it to the list*/
+    margin: 0 auto;
+
+}
+nav li{
+    width: 25%;
+    display: inline-block;
+}
+
+/* use "nav li a" to style the anchor tags*/
+nav li a{
+    text-decoration: none;
+    color: #5c08b5;
+    font-weight: 1000;
+}
+
+/* "nav li a.join" applies a color to only join from the list*/
+nav li a.join{
+    color: rgb(179, 8, 8);
+}
+
+main{
+    
+    max-width: 100%;
+    width: 1200px;
+    margin: 80px auto;
+    padding: 0 40px;
+
+    /* "box-sizing" tells it to not add the padding to the max width. Normally the padding is added to the max width, and this allows the texts to go off screen whenever you are using small screen devices*/
+    box-sizing: border-box;
+}
+
