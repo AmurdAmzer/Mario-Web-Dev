@@ -1,53 +1,49 @@
-/* styling multiple elements. Normally your browser will set a default style to your website, so this method of styling multiple elements is normally used to get rid of the default styling*/
-body, ul, li, h1, h2, a{
+/* Resetting default styles for multiple elements */
+body, ul, li, h1, h2, a {
     margin: 0;
     padding: 0;
     font-family: arial;
 }
 
-header{
+/* Styling the header */
+header {
     background-color: #f63232;
     padding: 20px;
     text-align: center;
     font-size: 20px;
     position: fixed;
     width: 100%;
-    
-    /* the "z-index" brings an object which is hidden behind to show on top. By default the "z-index" is set to 0, so to bring an element on top or in front, you need to set the z-index to 1*/
-    z-index: 1;
+    z-index: 1; /* Brings the header to the front */
     top: 0;
     right: 100;
     left: 0;
 }
 
-header h1{
+/* Styling the header's h1 element */
+header h1 {
     color: white;
     border: 8px solid white;
-    /* whenever you do 2 values for a padding, the first value is for the top and bottom and the second value is for left and right. Hence, 6px is for top and bottom of 6px, and 12px is for left and right of 12.*/
-    padding: 6px 12px;
-
-    /* the "display inline-block" changes the inline element to inline block. This makes whatever style you apply to it to fit*/
-    display: inline-block; 
-
-    /* "border-radius" gives a curved-corner to the edges of the border.*/
-    border-radius: 50px;
-
+    padding: 6px 12px; /* 6px for top/bottom, 12px for left/right */
+    display: inline-block; /* Changing the display to inline-block */
+    border-radius: 50px; /* Adding rounded corners */
 }
 
-.banner{
+/* Styling the banner section */
+.banner {
     position: relative;
     left: 0%;
     right: 0%;
-
 }
 
-.banner img{
-    max-width:100%;
+/* Styling the banner image */
+.banner img {
+    max-width: 100%;
     width: 100%;
     bottom: 50px;
 }
 
-.banner .welcome{
+/* Styling the "welcome" div within the banner */
+.banner .welcome {
     position: absolute;
     left: 0%;
     top: 30%;
@@ -56,107 +52,106 @@ header h1{
     padding: 30px;
 }
 
-.banner h2{
+/* Styling the h2 within the banner */
+.banner h2 {
     font-size: 74px;
 }
 
-/* "em" is a unit of measurement used for scaling a child element by the coefficient of "em", and this is relative to the parent element*/
-.banner h2 span{
-    font-size: 1.3em;
+/* Styling the "span" within the banner's h2 */
+.banner h2 span {
+    font-size: 1.3em; /* Relative font size */
 }
 
-nav{
+/* Styling the navigation menu */
+nav {
     background-color: #f1f1f1;
     padding: 20px;
-    
-    /* "the sticky" position is a combination of static and fixed*/
-    position: sticky;
-    
-    /* "top: 150px here means nav items will be static but when I scroll to 150px from the screen, the nav elements should be fixed to the screen"*/
-    top: 106px;
-
+    position: sticky; /* Sticky positioning */
+    top: 106px; /* Fixed after scrolling 106px from the top */
 }
 
-
-nav ul{
-    /* "nowrap" means the list will not move to the next line. In the other words, the list will stay on the same line*/
-    white-space: nowrap;
-
+/* Styling the navigation menu's list */
+nav ul {
+    white-space: nowrap; /* Prevents list items from wrapping to the next line */
     max-width: 100%;
     width: 1200px;
     text-align: center;
-
-    /* "auto" means if there is any space left or right it distributes it to the list*/
-    margin: 0 auto;
-
+    margin: 0 auto; /* Centers the list */
 }
-nav li{
+
+/* Styling individual navigation list items */
+nav li {
     width: 25%;
     display: inline-block;
 }
 
-/* use "nav li a" to style the anchor tags*/
-nav li a{
+/* Styling anchor links within navigation items */
+nav li a {
     text-decoration: none;
     color: #5c08b5;
     font-weight: 1000;
 }
 
-/* "nav li a.join" applies a color to only join from the list*/
-nav li a.join{
+/* Styling the "join" link within the navigation */
+nav li a.join {
     color: #b30808;
 }
 
-main{
-    /* "max-width" implies that the maximum a width can get is the default with of the screen. Also, "width" of 1200px means if the width of the device is more than 1200px, then the maximum the width can go is 1200px */
+/* Styling the main content section */
+main {
     max-width: 100%;
     width: 1200px;
     margin: 80px auto;
     padding: 0 40px;
-
-    /* "box-sizing" tells it to not add the padding to the max width. Normally the padding is added to the max width, and this allows the texts to go off screen whenever you are using small screen devices.
-    In short, box-sizing prevents texts and elements going off screen when using different screen sizes*/
-    box-sizing: border-box;
+    box-sizing: border-box; /* Prevents text from going off-screen */
 }
 
-article h2{
+/* Styling h2 within an article */
+article h2 {
     color: #f63232;
     font-size: 48px;
 }
 
-article p{
+/* Styling paragraphs within an article */
+article p {
     line-height: 2em;
-    color: 4b4b4b;
+    color: #4b4b4b;
 }
 
-.images{
+/* Styling the images section */
+.images {
     text-align: center;
     margin: 80px 0;
     white-space: nowrap;
 }
 
-.images li{
+/* Styling individual image list items */
+.images li {
     display: inline-block;
     width: 40%;
     margin: 20px 5%;
 }
 
-.images li img{
+/* Styling images within image list items */
+.images li img {
     max-width: 100%;
 }
 
-section.join{
+/* Styling the "join" section */
+section.join {
     background: #f4f4f4;
     text-align: center;
     padding: 60px 20px;
     color: #4b4b4b;
 }
 
-.join h2{
+/* Styling h2 within the "join" section */
+.join h2 {
     font-size: 36px;
 }
 
-form input{
+/* Styling input fields within forms */
+form input {
     margin: 20px 0;
     padding: 10px 20px;
     font-size: 24px;
@@ -165,98 +160,60 @@ form input{
     text-align: center;
 }
 
-footer{
+/* Styling the footer */
+footer {
     background: red;
     text-align: center;
     color: white;
     padding: 10px;
 }
 
-/* pseudo classes */
-
-/* The "hover" creates an effect when you hover over an element on the website*/
-nav li a:hover{
+/* Styling on hover for navigation links */
+nav li a:hover {
     text-decoration: underline;
     background-color: #dbe736;
     padding: 10px;
-
 }
-/* "top: -7px" is the same is applying "bottom: 7px" */
-.images li:hover{
+
+/* Styling on hover for images */
+.images li:hover {
     position: relative;
-    top: -7px;
-    
+    top: -7px; /* Slightly shifts the image upwards */
 }
 
-
-/* The "focus" creates an effect of bringing the element into focus when you hover over an element on the website*/
-
-form input:focus{
+/* Styling input fields in focus state */
+form input:focus {
     border: 4px dashed #4b4b4b;
     outline: none;
 }
 
-/* The "valid" pseudo class creates an a valid effect when a valid item is entered */
-
-form input:valid{
+/* Styling valid input fields */
+form input:valid {
     border: 4px solid #71d300;
-
 }
 
-/* The "first-child" pseudo class applies effect to only a first child in a list 
-
-nav li:first-child{
-    border: 3px solid 
-} */
-
-
-/* Adding Media Querries::after
-To add a media querry, use the "@media screen and (max-width: 1000px)" command.
-NB: "(max-width: 1000px)" means the style I will be providing should take effect when my screen size is 1000px or less.
-*/
-
-@media (max-width: 1400px){
-
-    .banner .welcome h2{
+/* Media queries for responsive design */
+@media (max-width: 1400px) {
+    .banner .welcome h2 {
         font-size: 60px;
     }
-
-    nav li{
+    nav li {
         font-size: 18px;
     }
-
 }
 
-    @media (max-width: 960px){
-
-    .banner .welcome h2{
+@media (max-width: 960px) {
+    .banner .welcome h2 {
         font-size: 60px;
-        
     }
 }
 
-@media  (max-width: 900px){
-
-    .banner .welcome h2{
+@media (max-width: 900px) {
+    .banner .welcome h2 {
         font-size: 60px;
         position: relative;
     }
-
-    .banner .welcome br{
+    .banner .welcome br {
         display: none;
     }
-
 }
-/* 
-Existing CSS
-
-.banner .welcome h2 {
-    font-size: 74px;
-}
-
-/* Add a media query to apply relative positioning for screens 700px or less */
-@media (max-width: 700px) {
-    .banner .welcome h2 {
-        position: relative;
-    }
-} */
