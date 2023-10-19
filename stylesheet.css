@@ -29,7 +29,7 @@ header h1{
     /* the "display inline-block" changes the inline element to inline block. This makes whatever style you apply to it to fit*/
     display: inline-block; 
 
-    /* "border-radius" gives a curve to the edges of the border.*/
+    /* "border-radius" gives a curved-corner to the edges of the border.*/
     border-radius: 50px;
 
 }
@@ -66,7 +66,7 @@ header h1{
 }
 
 nav{
-    background-color: #f4f4f4;
+    background-color: #f1f1f1;
     padding: 20px;
     
     /* "the sticky" position is a combination of static and fixed*/
@@ -79,7 +79,7 @@ nav{
 
 
 nav ul{
-    /* "nowrap" means the lsit will not move to the next line. In the other words, the list will stay on the same line*/
+    /* "nowrap" means the list will not move to the next line. In the other words, the list will stay on the same line*/
     white-space: nowrap;
 
     max-width: 100%;
@@ -104,17 +104,73 @@ nav li a{
 
 /* "nav li a.join" applies a color to only join from the list*/
 nav li a.join{
-    color: rgb(179, 8, 8);
+    color: #b30808;
 }
 
 main{
-    
+    /* "max-width" implies that the maximum a width can get is the default with of the screen. Also, "width" of 1200px means if the width of the device is more than 1200px, then the maximum the width can go is 1200px */
     max-width: 100%;
     width: 1200px;
     margin: 80px auto;
     padding: 0 40px;
 
-    /* "box-sizing" tells it to not add the padding to the max width. Normally the padding is added to the max width, and this allows the texts to go off screen whenever you are using small screen devices*/
+    /* "box-sizing" tells it to not add the padding to the max width. Normally the padding is added to the max width, and this allows the texts to go off screen whenever you are using small screen devices.
+    In short, box-sizing prevents texts and elements going off screen when using different screen sizes*/
     box-sizing: border-box;
 }
+
+article h2{
+    color: #f63232;
+    font-size: 48px;
+}
+
+article p{
+    line-height: 2em;
+    color: 4b4b4b;
+}
+
+.images{
+    text-align: center;
+    margin: 80px 0;
+    white-space: nowrap;
+}
+
+.images li{
+    display: inline-block;
+    width: 40%;
+    margin: 20px 5%;
+}
+
+.images li img{
+    max-width: 100%;
+}
+
+section.join{
+    background: #f4f4f4;
+    text-align: center;
+    padding: 60px 20px;
+    color: #4b4b4b;
+}
+
+.join h2{
+    font-size: 36px;
+}
+
+form input{
+    margin: 20px 0;
+    padding: 10px 20px;
+    font-size: 24px;
+    border-radius: 28px;
+    border: 4px solid white;
+    text-align: center;
+}
+
+footer{
+    background: red;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+
+/* pseudo classes */
 
