@@ -174,3 +174,89 @@ footer{
 
 /* pseudo classes */
 
+/* The "hover" creates an effect when you hover over an element on the website*/
+nav li a:hover{
+    text-decoration: underline;
+    background-color: #dbe736;
+    padding: 10px;
+
+}
+/* "top: -7px" is the same is applying "bottom: 7px" */
+.images li:hover{
+    position: relative;
+    top: -7px;
+    
+}
+
+
+/* The "focus" creates an effect of bringing the element into focus when you hover over an element on the website*/
+
+form input:focus{
+    border: 4px dashed #4b4b4b;
+    outline: none;
+}
+
+/* The "valid" pseudo class creates an a valid effect when a valid item is entered */
+
+form input:valid{
+    border: 4px solid #71d300;
+
+}
+
+/* The "first-child" pseudo class applies effect to only a first child in a list 
+
+nav li:first-child{
+    border: 3px solid 
+} */
+
+
+/* Adding Media Querries::after
+To add a media querry, use the "@media screen and (max-width: 1000px)" command.
+NB: "(max-width: 1000px)" means the style I will be providing should take effect when my screen size is 1000px or less.
+*/
+
+@media (max-width: 1400px){
+
+    .banner .welcome h2{
+        font-size: 60px;
+    }
+
+    nav li{
+        font-size: 18px;
+    }
+
+}
+
+    @media (max-width: 960px){
+
+    .banner .welcome h2{
+        font-size: 60px;
+        
+    }
+}
+
+@media  (max-width: 900px){
+
+    .banner .welcome h2{
+        font-size: 60px;
+        position: relative;
+    }
+
+    .banner .welcome br{
+        display: none;
+    }
+
+}
+/* 
+Existing CSS
+
+.banner .welcome h2 {
+    font-size: 74px;
+}
+
+/* Add a media query to apply relative positioning for screens 700px or less */
+@media (max-width: 700px) {
+    .banner .welcome h2 {
+        position: relative;
+    }
+} */
