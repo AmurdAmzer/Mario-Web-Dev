@@ -1,4 +1,6 @@
 /* Resetting default styles for multiple elements */
+
+/* styling multiple elements. Normally your browser will set a default style to your website, so this method of styling multiple elements is normally used to get rid of the default styling*/
 body, ul, li, h1, h2, a {
     margin: 0;
     padding: 0;
@@ -17,7 +19,10 @@ header {
     top: 0;
     right: 100;
     left: 0;
+/* NB: The "z-index" brings an object which is hidden behind to show on top. By default the "z-index" is set to 0, so to bring an element on top or in front, you need to set the z-index to 1*/
+
 }
+
 
 /* Styling the header's h1 element */
 header h1 {
@@ -26,7 +31,15 @@ header h1 {
     padding: 6px 12px; /* 6px for top/bottom, 12px for left/right */
     display: inline-block; /* Changing the display to inline-block */
     border-radius: 50px; /* Adding rounded corners */
+
+/* whenever you do 2 values for a padding, the first value is for the top and bottom and the second value is for left and right. Hence, 6px is for top and bottom of 6px, and 12px is for left and right of 12.*/
+
+ /* the "display inline-block" changes the inline element to inline block. This makes whatever style you apply to it to fit*/
+
+/* "border-radius" gives a curved-corner to the edges of the border.*/
+
 }
+
 
 /* Styling the banner section */
 .banner {
