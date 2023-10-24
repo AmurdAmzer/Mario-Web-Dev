@@ -73,6 +73,8 @@ header h1 {
 /* Styling the "span" within the banner's h2 */
 .banner h2 span {
     font-size: 1.3em; /* Relative font size */
+
+/* "em" is a unit of measurement used for scaling a child element by the coefficient of "em", and this is relative to the parent element*/
 }
 
 /* Styling the navigation menu */
@@ -81,6 +83,10 @@ nav {
     padding: 20px;
     position: sticky; /* Sticky positioning */
     top: 106px; /* Fixed after scrolling 106px from the top */
+
+ /* "the sticky" position is a combination of static and fixed*/
+
+ /* "top: 150px here means nav items will be static but when I scroll to 150px from the screen, the nav elements should be fixed to the screen"*/
 }
 
 /* Styling the navigation menu's list */
@@ -90,6 +96,10 @@ nav ul {
     width: 1200px;
     text-align: center;
     margin: 0 auto; /* Centers the list */
+
+/* "nowrap" means the list will not move to the next line. In the other words, the list will stay on the same line*/
+
+ /* "auto" means if there is any space left or right it distributes it to the list*/
 }
 
 /* Styling individual navigation list items */
@@ -103,11 +113,15 @@ nav li a {
     text-decoration: none;
     color: #5c08b5;
     font-weight: 1000;
+
+/* use "nav li a" to style the anchor tags*/
 }
 
 /* Styling the "join" link within the navigation */
 nav li a.join {
     color: #b30808;
+
+/* "nav li a.join" applies a color to only join from the list*/
 }
 
 /* Styling the main content section */
@@ -117,6 +131,11 @@ main {
     margin: 80px auto;
     padding: 0 40px;
     box-sizing: border-box; /* Prevents text from going off-screen */
+
+/* "max-width" implies that the maximum a width can get is the default with of the screen. Also, "width" of 1200px means if the width of the device is more than 1200px, then the maximum the width can go is 1200px */
+
+/* "box-sizing" tells it to not add the padding to the max width. Normally the padding is added to the max width, and this allows the texts to go off screen whenever you are using small screen devices.
+In short, box-sizing prevents texts and elements going off screenwhen using different screen sizes*/
 }
 
 /* Styling h2 within an article */
@@ -186,26 +205,47 @@ nav li a:hover {
     text-decoration: underline;
     background-color: #dbe736;
     padding: 10px;
+
+/* The "hover" creates an effect when you hover over an element on the website*/
 }
 
 /* Styling on hover for images */
 .images li:hover {
     position: relative;
     top: -7px; /* Slightly shifts the image upwards */
+
+/* "top: -7px" is the same is applying "bottom: 7px" */
 }
 
 /* Styling input fields in focus state */
 form input:focus {
     border: 4px dashed #4b4b4b;
     outline: none;
+
+/* The "focus" creates an effect of bringing the element into focus when you hover over an element on the website*/
 }
 
 /* Styling valid input fields */
 form input:valid {
     border: 4px solid #71d300;
+
+/* The "valid" pseudo class creates an a valid effect when a valid item is entered */
 }
 
+/* The "first-child" pseudo class applies effect to only a first child in a list 
+
+nav li:first-child{
+    border: 3px solid 
+} */
+
+
+
 /* Media queries for responsive design */
+
+/* Adding Media Querries::after
+To add a media querry, use the "@media screen and (max-width: 1000px)" command.
+NB: "(max-width: 1000px)" means the style I will be providing should take effect when my screen size is 1000px or less.
+*/
 @media (max-width: 1400px) {
     .banner .welcome h2 {
         font-size: 60px;
@@ -228,5 +268,12 @@ form input:valid {
     }
     .banner .welcome br {
         display: none;
+    }
+}
+
+/* Add a media query to apply relative positioning for screens 700px or less */
+@media (max-width: 700px) {
+    .banner .welcome h2 {
+        position: relative;
     }
 }
