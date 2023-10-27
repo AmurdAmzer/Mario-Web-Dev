@@ -272,4 +272,15 @@ NB: "(max-width: 1000px)" means the style I will be providing should take effect
 }
 
 /* Add a media query to apply relative positioning for screens 700px or less */
+@media (max-width: 700px) {
+    .banner .welcome h2 {
+        position: relative;
+    }
+}
+
+
+@media (max-width: 700px) {
+    nav li{
+        
+    }
 }
