@@ -285,8 +285,4 @@ NB: "(max-width: 1000px)" means the style I will be providing should take effect
     }
 
 
-@media (max-width: 700px) {
-    nav li{
-            
-    }
-}
+
