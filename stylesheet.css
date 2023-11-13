@@ -275,10 +275,14 @@ NB: "(max-width: 1000px)" means the style I will be providing should take effect
 @media (max-width: 700px) {
     .banner .welcome {
         position: relative;
+        text-align: center;
     }
 /* "display: none removes the break (br) in the welcome banner and makes all the text (Welcome to Marioclub) go in one line.*/
     .banner .welcome br {
         display: none;
+    }
+    .banner .welcome h2 {
+        font-size: 25px;
     }
 }
 
