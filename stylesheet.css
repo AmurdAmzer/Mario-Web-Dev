@@ -23,8 +23,6 @@ header {
 
 }
 
-ahmed hamza
-
 
 /* Styling the header's h1 element */
 header h1 {
@@ -259,7 +257,7 @@ NB: "(max-width: 1000px)" means the style I will be providing should take effect
 
 @media (max-width: 960px) {
     .banner .welcome h2 {
-        font-size: 60px;
+        font-size: 40px;
     }
 }
 
