@@ -276,6 +276,7 @@ NB: "(max-width: 1000px)" means the style I will be providing should take effect
     .banner .welcome {
         position: relative;
         text-align: center;
+        padding: 10px;
     }
 /* "display: none removes the break (br) in the welcome banner and makes all the text (Welcome to Marioclub) go in one line.*/
     .banner .welcome br {
@@ -284,10 +285,23 @@ NB: "(max-width: 1000px)" means the style I will be providing should take effect
     .banner .welcome h2 {
         font-size: 25px;
     }
+    .banner .welcome span {
+        font-size: 1em;
+    }
+    .images li{ /* this makes the images sit next to each other and reduces the margin around it. It also makes the images block elements. */
+        width: 100px;
+        margin: 20px auto;
+        display: block;
+    }
 }
 
 
-@media (max-width: 700px) {
+@media (max-width: 560px) {
     nav li{
+        font-size: 20px;
+        position: relative;
+        display: block;
+        width: 100%;
+        margin: 12px 0;
         
     }
