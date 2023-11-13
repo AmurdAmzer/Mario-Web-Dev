@@ -261,7 +261,7 @@ NB: "(max-width: 1000px)" means the style I will be providing should take effect
     }
 }
 
-@media (max-width: 900px) {
+/* @media (max-width: 900px) {
     .banner .welcome h2 {
         font-size: 60px;
         position: relative;
@@ -269,11 +269,11 @@ NB: "(max-width: 1000px)" means the style I will be providing should take effect
     .banner .welcome br {
         display: none;
     }
-}
+} */
 
 /* Add a media query to apply relative positioning for screens 700px or less */
 @media (max-width: 700px) {
-    .banner .welcome h2 {
+    .banner .welcome {
         position: relative;
     }
 }
