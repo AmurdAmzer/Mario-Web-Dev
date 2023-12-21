@@ -97,7 +97,7 @@ nav ul {
     text-align: center;
     margin: 0 auto; /* Centers the list */
 
-/* "nowrap" means the list will not move to the next line. In the other words, the list will stay on the same line*/
+/* "nowrap" means the list will not move to the next line. In other words, the list will stay on the same line*/
 
  /* "auto" means if there is any space left or right it distributes it to the list*/
 }
