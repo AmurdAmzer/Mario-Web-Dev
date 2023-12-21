@@ -217,9 +217,14 @@ nav li a:hover {
 /* "top: -7px" is the same is applying "bottom: 7px" */
 }
 
+form input:hover {
+    border: 0.5px solid  #4b4b4b;
+    outline: none;
+}
+
 /* Styling input fields in focus state */
 form input:focus {
-    border: 4px dashed #4b4b4b;
+    border: 0.5px solid  #4b4b4b;
     outline: none;
 
 /* The "focus" creates an effect of bringing the element into focus when you hover over an element on the website*/
